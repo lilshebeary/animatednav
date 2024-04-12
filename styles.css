@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles */
+
+html {
+  color-scheme: dark light;
+}
+
+/* min body height */
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: #ebe8e7;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+section {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+header {
+    --_animationStartsAfter: 500px;
+    --_animationDistance: 250px;
+
+    padding: 2rem 3rem;
+    margin-inline: auto;
+    margin-block: 0rem;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    
+    color: rgb(51, 50, 50);
+    background-color: #ebe8e7;
+    
+
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+
+    animation: scrollNav linear forwards;
+    animation-timeline: view();
+    animation-range-start: 10vh;
+    animation-range-end: 150vh;
+
+    animation: stickyNav linear forwards;
+    animation-timeline: view();
+    animation-range-start: 150vh;
+    animation-range-end: 170vh;
+    .logo {
+        fill: currentColor;
+        height: 10rem;
+       
+    }
+    nav {
+        align-items: center;
+        justify-content: space-between;
+    }
+   nav a {
+    text-decoration: none;
+    all: unset;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+   
+   }
+   ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem
+   }
+}
+@keyframes stickyNav {
+    100% {
+        background-color: rgb(51, 50, 50);
+        color: #ebe8e7;
+    }
+}
+
+@keyframes scrollNav {
+    10% {
+        box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.3);
+    }
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+}
+span {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 4.2rem;
+    color: #7a77b9;
+}
+section {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.two {
+    background-color: #bd9dea;
+    padding: 4rem;
+    margin-top: 2rem;
+    p {
+        margin: 2rem;
+        font-family: "Montserrat", sans-serif;
+        line-height: 2.1rem;
+    }
+    .one-p {
+        padding: 1rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        background-color: #7a77b9;
+    }
+}
+.three {
+    background-color: ;
+    padding: 4rem;
+    margin-top: 2rem;
+    p {
+        margin: 2rem;
+        font-family: "Montserrat", sans-serif;
+        line-height: 2.1rem;
+    }
+    .two-p {
+        padding: 1rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        background-color: #7a77b9;
+    }
+}
+.four {
+    background-color: #bd9d;
+    padding: 4rem;
+    margin-top: 2rem;
+    p {
+        margin: 2rem;
+        font-family: "Montserrat", sans-serif;
+        line-height: 2.1rem;
+    }
+    .two-p {
+        padding: 1rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        background-color: #7a77b9;
+    }
+}
