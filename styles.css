@@ -176,6 +176,7 @@ section {
         padding: 1rem;
         font-size: 1.8rem;
         font-weight: 500;
-        background-color: #7a77b9;
+        /* background-color: #7a77b9; */
+        background-color: #f2c7;
     }
 }
